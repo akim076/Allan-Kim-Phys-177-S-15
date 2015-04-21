@@ -1,0 +1,19 @@
+import numpy as np
+import math
+import matplotlib.pylab as plt
+
+homeWork = [10.0, 9.0, 8.0, 9.5, 3.0, 9.0, 0.0, 6.0]
+midTerm = [10.0, 10.0, 10.0, 10.0, 8.0, 5.0, 10.0, 7.0]
+Fproject= [9.0, 10.0, 10.0, 6.0, 10.0, 6.0, 8.0, 9.0]
+grade = homeWork * .4 + midTerm * .2 + Fproject * .4
+print grade
+failed = 0
+outstanding = 0
+if grade[i] < 6:
+	failed = failed + 1
+if grade[i] >9.5:
+	outstanding = outstanding +1
+fractionOfOutstanding = outstanding/8
+print failed
+print fractionOfOutstanding
+
